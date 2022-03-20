@@ -5,8 +5,10 @@
   inset: 0;
   background-image: url("../../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover 300px;
+  background-size: cover;
   background-position: top;
+  background-position: center -300px;
+
   z-index: 5;
 
   @include bp(medium) {
