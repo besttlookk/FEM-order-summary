@@ -1,4 +1,5 @@
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         {/* overlay */}
         <Card />
       </main>
+      <Footer />
     </>
   );
 }
