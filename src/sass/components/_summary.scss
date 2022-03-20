@@ -1,0 +1,30 @@
+@use "../utils/" as *;
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(12) rem(16);
+  margin-top: rem(20);
+  border-radius: rem(10);
+  background-color: $col-bg-light;
+
+  &__main {
+    flex: 1;
+    margin: 0 rem(12);
+    text-align: start;
+
+    p {
+      font-size: rem(14);
+    }
+  }
+
+  &__link {
+    font-size: rem(12);
+    font-weight: 600;
+
+    a {
+      color: $col-primary;
+    }
+  }
+}

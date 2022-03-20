@@ -1,0 +1,47 @@
+@use "../utils/" as *;
+
+.card {
+  position: relative;
+  z-index: 10;
+
+  background-color: white;
+  border-radius: 20px;
+  width: 90vw;
+  max-width: 330px;
+  box-shadow: 0 10px 20px rgba($col-primary, 0.2);
+  overflow: hidden;
+
+  &__image-container {
+    height: 170px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__main {
+    padding: rem(36) rem(24);
+    text-align: center;
+
+    p:first-of-child() {
+      margin: rem(12) 0;
+    }
+  }
+
+  &__link {
+    margin-top: rem(20);
+
+    a {
+      color: $col-para;
+      font-weight: 900;
+      text-decoration: none;
+      font-size: rem(15.5);
+
+      &:hover {
+        color: $col-primary;
+      }
+    }
+  }
+}

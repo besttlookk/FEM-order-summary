@@ -1,0 +1,18 @@
+@use "../utils" as *;
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover 300px;
+  background-position: top;
+  z-index: 5;
+
+  @include bp(medium) {
+    background: url("../../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -300px;
+  }
+}

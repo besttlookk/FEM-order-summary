@@ -1,0 +1,30 @@
+@use "../utils" as *;
+
+.btn {
+  position: relative;
+  display: block;
+  transition: 0.3s;
+  margin-top: rem(24);
+  box-shadow: 0 5px 25px rgba($col-primary, 0.5);
+  border: none;
+  border-radius: rem(10);
+  width: 100%;
+  padding: rem(16);
+  background-color: $col-primary;
+  cursor: pointer;
+  color: white;
+
+  span {
+    font-weight: 700;
+    font-size: rem(15);
+  }
+
+  &:hover {
+    filter: opacity(0.85);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba($col-primary, 0.7);
+  }
+}
